@@ -9,21 +9,23 @@
     <!--强制复制nuget包中的DLL到生成目录-->
     <!--<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>-->
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <PackageReadmeFile>README.en.md</PackageReadmeFile>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
   </PropertyGroup>
 
-  <!--程序集信息-->
+  <!--发行版程序集信息-->
   <PropertyGroup>
     <Title>$(AssemblyName)</Title>
     <Authors>Yukari Mikaduki</Authors>
     <Copyright>© Chaldea Security Organization. All rights reserved.</Copyright>
-    <AssemblyVersion>1.9.3.9288</AssemblyVersion>
-    <FileVersion>1.9.3.9288</FileVersion>
+    <AssemblyVersion>1.9.3.9299</AssemblyVersion>
+    <FileVersion>1.9.3.9299</FileVersion>
     <AssemblyInfoVersion>$(AssemblyVersion)</AssemblyInfoVersion>
-    <Version>1.9.3.1</Version>
-    <Description>Developer-Friendly Utilities for Daily Coding.</Description>
+    <Version>1.9.3.2</Version>
+    <Description>A collection of utilities integrated to facilitate daily development work.</Description>
+    <PackageReadmeFile>README.en.md</PackageReadmeFile>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <PackageProjectUrl>https://github.com/YukariMikaduki/Chaldea.Components</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/YukariMikaduki/Chaldea.Components</RepositoryUrl>
   </PropertyGroup>
   
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
@@ -53,6 +55,11 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>      
+    </None>
+    <None Include="LICENSE">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
     </None>
   </ItemGroup>
 
