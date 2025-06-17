@@ -1,2 +1,19 @@
-# Chaldea.Components
-æ–¹ä¾¿æ—¥å¸¸å¼€å‘å·¥ä½œè€Œæ•´åˆçš„å·¥å…·é›†
+## Chaldea.Componets
+
+## ×ÔÊö  
+
+´ËÄ£¿éÊÇÎªÁË·½±ãÈÕ³£¿ª·¢¹¤×÷¶øÕûºÏµÄ¹¤¾ß¼¯£¬°üÀ¨µ«²»ÏÞÓÚ£º
+- ³£ÓÃµÄµ¼³öº¯Êý
+- ¼òµ¥µÄÊÂ¼þ¾ÛºÏÆ÷
+- ¸÷Àà¼ò»¯´úÂëÀ©Õ¹·½·¨¼°Êý¾ÝÄ£ÐÍ
+- [NLog](https://www.nuget.org/packages/NLog) µÄ°ü×°µ÷ÓÃ
+
+## v1.9.3 ¸üÐÂÄÚÈÝ
+
+- ÖØÐ´ÁË×ÔÊöÎÄ¼þ
+- NLog°üµÄÒÀÀµÉý¼¶Îª5.5.0°æ±¾
+- ÈÕÖ¾Ä£¿éÔö¼ÓÁËÅäÖÃ¿ØÖÆ
+- ÐÞ¸ÄÁËÈÕÖ¾Êä³öµÄ×Ö·û´®²¼¾Ö
+- ÐÂÔöÁËÖ§³Ö¿É¿ÕÄ£Ê½
+- Ìí¼ÓÐÂµÄÊý¾ÝÄ£ÐÍ£º
+	- °Ù·ÖÊý

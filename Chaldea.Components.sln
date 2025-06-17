@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.36105.23 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chaldea.Components", "Chaldea.Components.csproj", "{BF991F2B-74D4-1460-DE9B-13B21D745E0C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BF991F2B-74D4-1460-DE9B-13B21D745E0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF991F2B-74D4-1460-DE9B-13B21D745E0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF991F2B-74D4-1460-DE9B-13B21D745E0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF991F2B-74D4-1460-DE9B-13B21D745E0C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {34F8D233-D8B9-4C7A-97AC-AB89D3A615BB}
+	EndGlobalSection
+EndGlobal
