@@ -11,6 +11,11 @@ This module is a collection of utilities integrated to facilitate daily developm
 - Various extension methods and data models to simplify code
 - Wrapper calls for [NLog](https://www.nuget.org/packages/NLog)
 
+## v1.9.4 Update Details
+
+- Added new extension methods:
+    - To check if an object is defined within an enum and return the corresponding enum value
+
 ## v1.9.3.2 Update Details
 
 - Modifications to README files and project assembly descriptions to better comply with NuGet package management standards
