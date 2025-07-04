@@ -24,4 +24,4 @@
 ## v1.9.5 更新内容
 
 - 修改了事件聚合器的运作模式，现在更简洁稳定了
-- [更新历史](https://www.nuget.org/packages/Chaldea.Components/)
+- [更新历史](https://github.com/YukariMikaduki/Chaldea.Components/blob/main/CHANGELOG.md)

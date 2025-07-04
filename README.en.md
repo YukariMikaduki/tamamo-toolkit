@@ -24,4 +24,4 @@ This module is a collection of utilities integrated to facilitate daily developm
 ## v1.9.5 Update Details
 
 - Improved the event aggregator¡¯s operation mode, making it cleaner and more stable now.
-- [Changelog](https://www.nuget.org/packages/Chaldea.Components/)
+- [Changelog](https://github.com/YukariMikaduki/Chaldea.Components/blob/main/CHANGELOG.en.md)
