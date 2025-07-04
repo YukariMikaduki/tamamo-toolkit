@@ -1,4 +1,8 @@
-﻿## v1.9.5 更新内容
+﻿## v2.0.0 更新内容
+
+- 将依赖于 Windows 环境的内容拆分到 [Chaldea.Components.Windows](https://www.nuget.org/packages/Chaldea.Components.Windows)，包括 `Chaldea.Components.DllImport` 命名空间和 `Chaldea.Components.Utils` 命名空间的所有类及方法
+
+## v1.9.5 更新内容
 
 - 修改了事件聚合器的运作模式，现在更简洁稳定了
 

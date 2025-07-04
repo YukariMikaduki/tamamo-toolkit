@@ -1,4 +1,8 @@
-﻿## v1.9.5 Update Details
+﻿## v2.0.0 Update Details
+
+- Migrated Windows-specific features to separate package [Chaldea.Components.Windows](https://www.nuget.org/packages/Chaldea.Components.Windows), encompassing entire `Chaldea.Components.DllImport` and `Chaldea.Components.Utils` namespaces.
+
+## v1.9.5 Update Details
 
 - Improved the event aggregator’s operation mode, making it cleaner and more stable now.
 

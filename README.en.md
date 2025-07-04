@@ -10,18 +10,15 @@
 ## README  
 
 This module is a collection of utilities integrated to facilitate daily development work, including but not limited to:
-- Common used DllImport functions
-	- `Chaldea.Components.DllImport` namespace
 - Simple event aggregator
 	- `Chaldea.Components.Events` namespace
 - Various extension methods and data models for code simplification
 	- `Chaldea.Components.Extensions` namespace
-	- `Chaldea.Components.Utils` namespace
 	- `Chaldea.Components.Models` namespace
 - Wrapper calls for [NLog](https://www.nuget.org/packages/NLog):
 	- `Chaldea.Components.Logger` namespace
 
-## v1.9.5 Update Details
+## v2.0.0 Update Details
 
-- Improved the event aggregator's operation mode, making it cleaner and more stable now.
+- Migrated Windows-specific features to separate package [Chaldea.Components.Windows](https://www.nuget.org/packages/Chaldea.Components.Windows), encompassing entire `Chaldea.Components.DllImport` and `Chaldea.Components.Utils` namespaces.
 - [Changelog](https://github.com/YukariMikaduki/Chaldea.Components/blob/main/CHANGELOG.en.md)
