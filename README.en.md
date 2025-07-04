@@ -1,11 +1,11 @@
 # Chaldea.Components
 
 [![Platforms](https://img.shields.io/badge/platform-net6.0_|_net8.0-blue.svg?logo=githubpages)](https://github.com/YukariMikaduki/Chaldea.Components)
-[![NuGet Package](https://img.shields.io/nuget/v/Chaldea.Components.svg?logo=nuget)](https://www.nuget.org/packages/Chaldea.Components/)
+[![NuGet Package](https://img.shields.io/nuget/v/Chaldea.Components.svg?logo=nuget)](https://www.nuget.org/packages/Chaldea.Components)
 [![License](https://img.shields.io/github/license/YukariMikaduki/Chaldea.Components.svg?logo=github)](https://github.com/YukariMikaduki/Chaldea.Components/blob/main/LICENSE)
 
 - [Project URL](https://github.com/YukariMikaduki/Chaldea.Components)
-- [NuGet Package](https://www.nuget.org/packages/Chaldea.Components/)
+- [NuGet Package](https://www.nuget.org/packages/Chaldea.Components)
 
 ## README  
 
