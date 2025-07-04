@@ -1,4 +1,8 @@
-## Chaldea.Components
+# Chaldea.Components
+
+[![Platforms](https://img.shields.io/badge/platform-net6.0_|_net8.0-blue.svg?logo=githubpages)](https://github.com/YukariMikaduki/Chaldea.Components)
+[![NuGet Package](https://img.shields.io/nuget/v/Chaldea.Components.svg?logo=nuget)](https://www.nuget.org/packages/Chaldea.Components/)
+[![License](https://img.shields.io/github/license/YukariMikaduki/Chaldea.Components.svg?logo=github)](https://github.com/YukariMikaduki/Chaldea.Components/blob/main/LICENSE)
 
 - [Project URL](https://github.com/YukariMikaduki/Chaldea.Components)
 - [NuGet Package](https://www.nuget.org/packages/Chaldea.Components/)
@@ -6,34 +10,18 @@
 ## README  
 
 This module is a collection of utilities integrated to facilitate daily development work, including but not limited to:
-- Commonly used export functions
+- Common used DllImport functions
+	- `Chaldea.Components.DllImport` namespace
 - Simple event aggregator
-- Various extension methods and data models to simplify code
-- Wrapper calls for [NLog](https://www.nuget.org/packages/NLog)
+	- `Chaldea.Components.Events` namespace
+- Various extension methods and data models for code simplification
+	- `Chaldea.Components.Extensions` namespace
+	- `Chaldea.Components.Utils` namespace
+	- `Chaldea.Components.Models` namespace
+- Wrapper calls for [NLog](https://www.nuget.org/packages/NLog):
+	- `Chaldea.Components.Logger` namespace
 
-## v1.9.4 Update Details
+## v1.9.5 Update Details
 
-- Added new extension methods:
-    - To check if an object is defined within an enum and return the corresponding enum value
-
-## v1.9.3.2 Update Details
-
-- Modifications to README files and project assembly descriptions to better comply with NuGet package management standards
-
-## v1.9.3.1 Update Details
-
-- Added English README file
-
-## v1.9.3 Update Details
-
-- Rewrote the README file
-- Upgraded NLog package dependency to version 5.5.0
-- Added configuration control to the logging module
-- Modified the string layout for log output
-- Added support for nullable mode
-- Added new data models:
-    - Percentage
-
-## Update Details for v1.9.3 and Earlier
-
-- Refer to the source code commit history
+- Improved the event aggregator¡¯s operation mode, making it cleaner and more stable now.
+- [Changelog](https://www.nuget.org/packages/Chaldea.Components/)
