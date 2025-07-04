@@ -16,10 +16,10 @@
     <Title>$(AssemblyName)</Title>
     <Authors>Yukari Mikaduki</Authors>
     <Copyright>© Chaldea Security Organization. All rights reserved.</Copyright>
-    <AssemblyVersion>1.9.4.9299</AssemblyVersion>
-    <FileVersion>1.9.4.9299</FileVersion>
+    <AssemblyVersion>1.9.5.9316</AssemblyVersion>
+    <FileVersion>1.9.5.9316</FileVersion>
     <AssemblyInfoVersion>$(AssemblyVersion)</AssemblyInfoVersion>
-    <Version>1.9.4</Version>
+    <Version>1.9.5</Version>
     <Description>A collection of utilities integrated to facilitate daily development work.</Description>
     <PackageReadmeFile>README.en.md</PackageReadmeFile>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
