@@ -27,4 +27,4 @@ This project is a collection of utilities integrated to facilitate daily develop
 	- Chaldea.Components.Models -> TamamoToolkit.Models
 	- Chaldea.Components.Logger -> TamamoToolkit.Logger
 
-# [More Changelog](https://github.com/YukariMikaduki/tamamo-toolkit/blob/main/CHANGELOG.en.md)
+## [More Changelog](https://github.com/YukariMikaduki/tamamo-toolkit/blob/main/CHANGELOG.en.md)
