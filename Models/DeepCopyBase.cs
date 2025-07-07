@@ -1,4 +1,4 @@
-﻿namespace Chaldea.Components.Models
+﻿namespace TamamoToolkit.Models
 {
     /// <summary>
     /// <see cref="IDeepCopy{T}"/> 接口的一个抽象实现

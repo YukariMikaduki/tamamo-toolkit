@@ -1,4 +1,4 @@
-﻿namespace Chaldea.Components.Logger
+﻿namespace TamamoToolkit.Logger
 {
     /// <summary>
     /// 日志记录器工厂

@@ -1,7 +1,7 @@
-﻿using Chaldea.Components.Extensions;
-using System.Runtime.CompilerServices;
+﻿using System.Runtime.CompilerServices;
+using TamamoToolkit.Extensions;
 
-namespace Chaldea.Components.Logger
+namespace TamamoToolkit.Logger
 {
     /// <summary>
     /// <see cref="ILogger"/> 接口的一个实现，可以继承此类以扩展功能

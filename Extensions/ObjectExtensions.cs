@@ -1,4 +1,4 @@
-﻿namespace Chaldea.Components.Extensions
+﻿namespace TamamoToolkit.Extensions
 {
     /// <summary>
     /// <see cref="object"/> 扩展类

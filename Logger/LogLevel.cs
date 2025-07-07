@@ -1,6 +1,6 @@
 ﻿using NLogLevel = NLog.LogLevel;
 
-namespace Chaldea.Components.Logger
+namespace TamamoToolkit.Logger
 {
     internal static class LogLevelExtensions
     {

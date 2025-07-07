@@ -1,6 +1,6 @@
 ﻿using System.Buffers.Binary;
 
-namespace Chaldea.Components.Extensions
+namespace TamamoToolkit.Extensions
 {
     /// <summary>
     /// <see cref="byte"/>[] 数组扩展类

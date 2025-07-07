@@ -1,7 +1,7 @@
-﻿using Chaldea.Components.Extensions;
-using System.Collections.Concurrent;
+﻿using System.Collections.Concurrent;
+using TamamoToolkit.Extensions;
 
-namespace Chaldea.Components.Events
+namespace TamamoToolkit.Events
 {
     /// <summary>
     /// 适用于 <see cref="EventCenter"/> 的事件类型基类

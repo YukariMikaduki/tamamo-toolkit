@@ -1,4 +1,4 @@
-﻿namespace Chaldea.Components.Models
+﻿namespace TamamoToolkit.Models
 {
     /// <summary>
     /// 百分数，有效值为 [0,100] 闭区间内的 <see cref="float"/> 值，超出此范围时代表无效

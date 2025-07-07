@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics;
 
-namespace Chaldea.Components.Extensions
+namespace TamamoToolkit.Extensions
 {
     /// <summary>
     /// <see cref="Process"/> 扩展类
