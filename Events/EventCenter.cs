@@ -1,4 +1,4 @@
-﻿namespace Chaldea.Components.Events
+﻿namespace TamamoToolkit.Events
 {
     /// <summary>
     /// 事件中心，此类不能被继承

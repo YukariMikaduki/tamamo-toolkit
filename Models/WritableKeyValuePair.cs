@@ -1,4 +1,4 @@
-﻿namespace Chaldea.Components.Models
+﻿namespace TamamoToolkit.Models
 {
     /// <summary>
     /// 创建 <see cref="WritableKeyValuePair{TKey, TValue}"/> 结构体的实例

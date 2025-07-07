@@ -1,24 +1,30 @@
-# Chaldea.Components
+# TamamoToolkit
 
-[![Platforms](https://img.shields.io/badge/platform-net6.0_|_net8.0-blue.svg?logo=githubpages)](https://github.com/YukariMikaduki/Chaldea.Components)
-[![NuGet Package](https://img.shields.io/nuget/v/Chaldea.Components.svg?logo=nuget)](https://www.nuget.org/packages/Chaldea.Components)
-[![License](https://img.shields.io/github/license/YukariMikaduki/Chaldea.Components.svg?logo=github)](https://github.com/YukariMikaduki/Chaldea.Components/blob/main/LICENSE)
+[![Platforms](https://img.shields.io/badge/platform-net6.0_|_net8.0-blue.svg?logo=githubpages)](https://github.com/YukariMikaduki/tamamo-toolkit)
+[![NuGet Package](https://img.shields.io/nuget/v/TamamoToolkit.svg?logo=nuget)](https://www.nuget.org/packages/TamamoToolkit)
+[![License](https://img.shields.io/github/license/YukariMikaduki/tamamo-toolkit.svg?logo=github)](https://github.com/YukariMikaduki/tamamo-toolkit/blob/main/LICENSE)
 
-- [Project URL](https://github.com/YukariMikaduki/Chaldea.Components)
-- [NuGet Package](https://www.nuget.org/packages/Chaldea.Components)
+- [Project URL](https://github.com/YukariMikaduki/tamamo-toolkit)
+- [NuGet Package](https://www.nuget.org/packages/TamamoToolkit)
 
 ## README  
 
-This module is a collection of utilities integrated to facilitate daily development work, including but not limited to:
+This project is a collection of utilities integrated to facilitate daily development work, including but not limited to:
 - Simple event aggregator
-	- `Chaldea.Components.Events` namespace
+	- `TamamoToolkit.Events` namespace
 - Various extension methods and data models for code simplification
-	- `Chaldea.Components.Extensions` namespace
-	- `Chaldea.Components.Models` namespace
+	- `TamamoToolkit.Extensions` namespace
+	- `TamamoToolkit.Models` namespace
 - Wrapper calls for [NLog](https://www.nuget.org/packages/NLog):
-	- `Chaldea.Components.Logger` namespace
+	- `TamamoToolkit.Logger` namespace
 
-## v2.0.0 Update Details
+## v2.0.1 Update Details
 
-- Migrated Windows-specific features to separate package [Chaldea.Components.Windows](https://www.nuget.org/packages/Chaldea.Components.Windows), encompassing entire `Chaldea.Components.DllImport` and `Chaldea.Components.Utils` namespaces.
-- [Changelog](https://github.com/YukariMikaduki/Chaldea.Components/blob/main/CHANGELOG.en.md)
+- Project officially renamed to **TamamoToolkit**, and all namespaces have been updated accordingly.	
+	- Chaldea.Components ¡ú TamamoToolkit
+	- Chaldea.Components.Events ¡ú TamamoToolkit.Events
+	- Chaldea.Components.Extensions ¡ú TamamoToolkit.Extensions
+	- Chaldea.Components.Models ¡ú TamamoToolkit.Models
+	- Chaldea.Components.Logger ¡ú TamamoToolkit.Logger
+
+# [More Changelog](https://github.com/YukariMikaduki/tamamo-toolkit/blob/main/CHANGELOG.en.md)

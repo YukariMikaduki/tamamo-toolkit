@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 using System.Reflection;
 
-namespace Chaldea.Components.Extensions
+namespace TamamoToolkit.Extensions
 {
     /// <summary>
     /// <see cref="Enum"/> 扩展类

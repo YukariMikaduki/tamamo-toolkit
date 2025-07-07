@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.36105.23 d17.13
+VisualStudioVersion = 17.13.36105.23
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chaldea.Components", "Chaldea.Components.csproj", "{BF991F2B-74D4-1460-DE9B-13B21D745E0C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TamamoToolkit", "TamamoToolkit.csproj", "{BF991F2B-74D4-1460-DE9B-13B21D745E0C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

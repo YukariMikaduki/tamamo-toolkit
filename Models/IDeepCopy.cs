@@ -1,4 +1,4 @@
-﻿namespace Chaldea.Components.Models
+﻿namespace TamamoToolkit.Models
 {
     /// <summary>
     /// 可以深复制的方法接口，泛型版本

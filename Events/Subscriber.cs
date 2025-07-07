@@ -1,4 +1,4 @@
-﻿namespace Chaldea.Components.Events
+﻿namespace TamamoToolkit.Events
 {
     /// <summary>
     /// 订阅者

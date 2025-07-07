@@ -1,6 +1,6 @@
 ﻿using System.Runtime.CompilerServices;
 
-namespace Chaldea.Components.Logger
+namespace TamamoToolkit.Logger
 {
     /// <summary>
     /// 日志记录器接口

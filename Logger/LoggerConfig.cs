@@ -4,7 +4,7 @@ using NLog.Config;
 using NLog.Targets;
 using NLogLevel = NLog.LogLevel;
 
-namespace Chaldea.Components.Logger
+namespace TamamoToolkit.Logger
 {
     /// <summary>
     /// 日志配置

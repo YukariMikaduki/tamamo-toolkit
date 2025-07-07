@@ -1,4 +1,4 @@
-﻿namespace Chaldea.Components.Extensions
+﻿namespace TamamoToolkit.Extensions
 {
     /// <summary>
     /// <see cref="Exception"/> 扩展类

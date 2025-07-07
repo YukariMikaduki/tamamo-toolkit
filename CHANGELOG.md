@@ -1,4 +1,13 @@
-﻿## v2.0.0 更新内容
+﻿## v2.0.1 更新内容
+
+- 项目正式更名为 **TamamoToolkit**，所有命名空间均已调整
+	- Chaldea.Components → TamamoToolkit
+	- Chaldea.Components.Events → TamamoToolkit.Events
+	- Chaldea.Components.Extensions → TamamoToolkit.Extensions
+	- Chaldea.Components.Models → TamamoToolkit.Models
+	- Chaldea.Components.Logger → TamamoToolkit.Logger
+
+## v2.0.0 更新内容
 
 - 将依赖于 Windows 环境的内容拆分到 [Chaldea.Components.Windows](https://www.nuget.org/packages/Chaldea.Components.Windows)，包括 `Chaldea.Components.DllImport` 命名空间和 `Chaldea.Components.Utils` 命名空间的所有类及方法
 

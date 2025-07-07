@@ -1,4 +1,13 @@
-﻿## v2.0.0 Update Details
+﻿## v2.0.1 Update Details
+
+- Project officially renamed to **TamamoToolkit**, and all namespaces have been updated accordingly.	
+	- Chaldea.Components → TamamoToolkit
+	- Chaldea.Components.Events → TamamoToolkit.Events
+	- Chaldea.Components.Extensions → TamamoToolkit.Extensions
+	- Chaldea.Components.Models → TamamoToolkit.Models
+	- Chaldea.Components.Logger → TamamoToolkit.Logger
+
+## v2.0.0 Update Details
 
 - Migrated Windows-specific features to separate package [Chaldea.Components.Windows](https://www.nuget.org/packages/Chaldea.Components.Windows), encompassing entire `Chaldea.Components.DllImport` and `Chaldea.Components.Utils` namespaces.
 

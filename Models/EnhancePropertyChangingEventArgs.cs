@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace Chaldea.Components.Models
+namespace TamamoToolkit.Models
 {
     /// <summary>
     /// 增强 <see cref="PropertyChangingEventArgs"/> 的功能，添加即将更改的属性的旧值和新值
