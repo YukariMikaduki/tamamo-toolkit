@@ -15,7 +15,7 @@
   <PropertyGroup>
     <Title>$(AssemblyName)</Title>
     <Authors>Yukari Mikaduki</Authors>
-    <Copyright>Copyright © 2025 Yukari Mikaduki. All rights reserved.</Copyright>
+    <Copyright>Copyright (c) 2025 Yukari Mikaduki. All rights reserved.</Copyright>
     <AssemblyVersion>2.0.1.9319</AssemblyVersion>
     <FileVersion>2.0.1.9319</FileVersion>
     <AssemblyInfoVersion>$(AssemblyVersion)</AssemblyInfoVersion>
