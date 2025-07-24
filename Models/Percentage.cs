@@ -11,22 +11,22 @@
         /// <summary>
         /// 百分数最大值，即为 100
         /// </summary>
-        public static Percentage MaxValue { get; } = new Percentage(100f);
+        public static Percentage MaxValue => new Percentage(100f);
 
         /// <summary>
         /// 百分数最小值，即为 0
         /// </summary>
-        public static Percentage MinValue { get; } = new Percentage(0f);
+        public static Percentage MinValue => new Percentage(0f);
 
         /// <summary>
         /// 百分数负无效值，即小于 0
         /// </summary>
-        public static Percentage NegativeNaN { get; } = new Percentage(float.NegativeInfinity);
+        public static Percentage NegativeNaN => new Percentage(float.NegativeInfinity);
 
         /// <summary>
         /// 百分数正无效值，即大于 100
         /// </summary>
-        public static Percentage PositiveNaN { get; } = new Percentage(float.PositiveInfinity);
+        public static Percentage PositiveNaN => new Percentage(float.PositiveInfinity);
 
         /// <summary>
         /// 百分数，有效值为 [0,100] 闭区间内的 <see cref="float"/> 值，超出此范围时代表无效
@@ -50,6 +50,45 @@
         /// <param name="value">百分数的值</param>
         public Percentage(uint value) : this(Convert.ToSingle(value))
         {
+        }
+
+        /// <inheritdoc/>
+        public int CompareTo(Percentage other)
+        {
+            return this.value.CompareTo(other.value);
+        }
+
+        /// <inheritdoc/>
+        public bool Equals(Percentage other)
+        {
+            return this.value == other.value;
+        }
+
+        /// <inheritdoc/>
+        public override bool Equals(object? obj)
+        {
+            return obj is Percentage value && Equals(value);
+        }
+
+        /// <inheritdoc/>
+        public override int GetHashCode()
+        {
+            return this.value.GetHashCode();
+        }
+
+        /// <summary>
+        /// 转换为 <see cref="float"/> 值
+        /// </summary>
+        /// <returns>转换后的 <see cref="float"/> 值</returns>
+        public float ToSingle()
+        {
+            return this.value;
+        }
+
+        /// <inheritdoc/>
+        public override string ToString()
+        {
+            return this == NegativeNaN ? "-NaN" : this == PositiveNaN ? "+NaN" : $"{this.value:f2} %";
         }
 
         #region 强制类型转换
@@ -223,44 +262,5 @@
         }
 
         #endregion 操作符重载
-
-        /// <inheritdoc/>
-        public int CompareTo(Percentage other)
-        {
-            return this.value.CompareTo(other.value);
-        }
-
-        /// <inheritdoc/>
-        public bool Equals(Percentage other)
-        {
-            return this.value == other.value;
-        }
-
-        /// <inheritdoc/>
-        public override bool Equals(object? obj)
-        {
-            return obj is Percentage value && Equals(value);
-        }
-
-        /// <inheritdoc/>
-        public override int GetHashCode()
-        {
-            return this.value.GetHashCode();
-        }
-
-        /// <summary>
-        /// 转换为 <see cref="float"/> 值
-        /// </summary>
-        /// <returns>转换后的 <see cref="float"/> 值</returns>
-        public float ToSingle()
-        {
-            return this.value;
-        }
-
-        /// <inheritdoc/>
-        public override string ToString()
-        {
-            return this == NegativeNaN ? "-NaN" : this == PositiveNaN ? "+NaN" : $"{this.value:f2} %";
-        }
     }
 }
