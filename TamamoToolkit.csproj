@@ -16,10 +16,10 @@
     <Title>$(AssemblyName)</Title>
     <Authors>Yukari Mikaduki</Authors>
     <Copyright>Copyright (c) 2025 Yukari Mikaduki. All rights reserved.</Copyright>
-    <AssemblyVersion>2.0.1.9319</AssemblyVersion>
-    <FileVersion>2.0.1.9319</FileVersion>
+    <AssemblyVersion>2.1.0.9441</AssemblyVersion>
+    <FileVersion>2.1.0.9441</FileVersion>
     <AssemblyInfoVersion>$(AssemblyVersion)</AssemblyInfoVersion>
-    <Version>2.0.1</Version>
+    <Version>2.1.0</Version>
     <Description>A collection of utilities integrated to facilitate daily development work.</Description>
     <PackageReadmeFile>README.en.md</PackageReadmeFile>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
@@ -42,7 +42,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="NLog" Version="5.5.0" />
+    <PackageReference Include="NLog" Version="6.0.5" />
   </ItemGroup>
 
   <ItemGroup>

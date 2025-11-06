@@ -66,8 +66,6 @@ namespace TamamoToolkit.Logger
                 ArchiveFileName = this.ArchiveFileName,
                 ArchiveEvery = FileArchivePeriod.Sunday,
                 ArchiveAboveSize = 209715200,
-                ArchiveNumbering = ArchiveNumberingMode.Rolling,
-                ConcurrentWrites = true,
                 KeepFileOpen = true,
                 OpenFileCacheTimeout = 30,
             };

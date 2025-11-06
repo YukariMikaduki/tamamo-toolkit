@@ -1,4 +1,9 @@
-﻿## v2.0.1 Update Details
+﻿## v2.1.0 Update Details
+
+- Upgraded the dependency of the [NLog](https://www.nuget.org/packages/NLog) package to version 6.0.5
+- Modified the Exception string concatenation layout for log output
+
+## v2.0.1 Update Details
 
 - Project officially renamed to **TamamoToolkit**, and all namespaces have been updated accordingly.	
 	- Chaldea.Components -> TamamoToolkit

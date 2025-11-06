@@ -10,27 +10,27 @@ namespace TamamoToolkit.Logger
         /// <summary>
         /// 记录Debug级日志
         /// </summary>
-        /// <param name="msg">日志显示的信息</param>
+        /// <param name="message">日志显示的信息</param>
         /// <param name="filePath">调用成员路径</param>
         /// <param name="memberName">调用成员名</param>
-        void Debug(string? msg, [CallerFilePath] string filePath = "", [CallerMemberName] string memberName = "");
+        void Debug(string? message, [CallerFilePath] string filePath = "", [CallerMemberName] string memberName = "");
 
         /// <summary>
         /// 记录Error级日志
         /// </summary>
-        /// <param name="msg">日志显示的信息</param>
+        /// <param name="message">日志显示的信息</param>
         /// <param name="ex">错误实例</param>
         /// <param name="filePath">调用成员路径</param>
         /// <param name="memberName">调用成员名</param>
-        void Error(string? msg, Exception? ex, [CallerFilePath] string filePath = "", [CallerMemberName] string memberName = "");
+        void Error(string? message, Exception? ex, [CallerFilePath] string filePath = "", [CallerMemberName] string memberName = "");
 
         /// <summary>
         /// 记录Error级日志
         /// </summary>
-        /// <param name="msg">日志显示的信息</param>
+        /// <param name="message">日志显示的信息</param>
         /// <param name="filePath">调用成员路径</param>
         /// <param name="memberName">调用成员名</param>
-        void Error(string? msg, [CallerFilePath] string filePath = "", [CallerMemberName] string memberName = "");
+        void Error(string? message, [CallerFilePath] string filePath = "", [CallerMemberName] string memberName = "");
 
         /// <summary>
         /// 记录Error级日志
@@ -43,19 +43,19 @@ namespace TamamoToolkit.Logger
         /// <summary>
         /// 记录Fatal级日志
         /// </summary>
-        /// <param name="msg">日志显示的信息</param>
+        /// <param name="message">日志显示的信息</param>
         /// <param name="ex">错误实例</param>
         /// <param name="filePath">调用成员路径</param>
         /// <param name="memberName">调用成员名</param>
-        void Fatal(string? msg, Exception? ex, [CallerFilePath] string filePath = "", [CallerMemberName] string memberName = "");
+        void Fatal(string? message, Exception? ex, [CallerFilePath] string filePath = "", [CallerMemberName] string memberName = "");
 
         /// <summary>
         /// 记录Fatal级日志
         /// </summary>
-        /// <param name="msg">日志显示的信息</param>
+        /// <param name="message">日志显示的信息</param>
         /// <param name="filePath">调用成员路径</param>
         /// <param name="memberName">调用成员名</param>
-        void Fatal(string? msg, [CallerFilePath] string filePath = "", [CallerMemberName] string memberName = "");
+        void Fatal(string? message, [CallerFilePath] string filePath = "", [CallerMemberName] string memberName = "");
 
         /// <summary>
         /// 记录Fatal级日志
@@ -68,27 +68,27 @@ namespace TamamoToolkit.Logger
         /// <summary>
         /// 记录Info级日志
         /// </summary>
-        /// <param name="msg">日志显示的信息</param>
+        /// <param name="message">日志显示的信息</param>
         /// <param name="filePath">调用成员路径</param>
         /// <param name="memberName">调用成员名</param>
-        void Info(string? msg, [CallerFilePath] string filePath = "", [CallerMemberName] string memberName = "");
+        void Info(string? message, [CallerFilePath] string filePath = "", [CallerMemberName] string memberName = "");
 
         /// <summary>
         /// 记录Trace级日志
         /// </summary>
-        /// <param name="msg">日志显示的信息</param>
+        /// <param name="message">日志显示的信息</param>
         /// <param name="filePath">调用成员路径</param>
         /// <param name="memberName">调用成员名</param>
-        void Trace(string? msg, [CallerFilePath] string filePath = "", [CallerMemberName] string memberName = "");
+        void Trace(string? message, [CallerFilePath] string filePath = "", [CallerMemberName] string memberName = "");
 
         /// <summary>
         /// 记录Warn级日志
         /// </summary>
-        /// <param name="msg">日志显示的信息</param>
+        /// <param name="message">日志显示的信息</param>
         /// <param name="ex">错误实例</param>
         /// <param name="filePath">调用成员路径</param>
         /// <param name="memberName">调用成员名</param>
-        void Warn(string? msg, Exception? ex, [CallerFilePath] string filePath = "", [CallerMemberName] string memberName = "");
+        void Warn(string? message, Exception? ex, [CallerFilePath] string filePath = "", [CallerMemberName] string memberName = "");
 
         /// <summary>
         /// 记录Warn级日志
@@ -101,9 +101,9 @@ namespace TamamoToolkit.Logger
         /// <summary>
         /// 记录Warn级日志
         /// </summary>
-        /// <param name="msg">日志显示的信息</param>
+        /// <param name="message">日志显示的信息</param>
         /// <param name="filePath">调用成员路径</param>
         /// <param name="memberName">调用成员名</param>
-        void Warn(string? msg, [CallerFilePath] string filePath = "", [CallerMemberName] string memberName = "");
+        void Warn(string? message, [CallerFilePath] string filePath = "", [CallerMemberName] string memberName = "");
     }
 }

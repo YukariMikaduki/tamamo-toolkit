@@ -17,111 +17,111 @@ namespace TamamoToolkit.Logger
         /// <summary>
         /// 记录Debug级日志的内部实现
         /// </summary>
-        /// <param name="msg">日志显示的信息</param>
+        /// <param name="message">日志显示的信息</param>
         /// <param name="filePath">调用成员路径</param>
         /// <param name="memberName">调用成员名</param>
-        protected virtual void InnerDebug(string? msg, string filePath, string memberName)
+        protected virtual void InnerDebug(string? message, string filePath, string memberName)
         {
             string className = filePath.Split('\\')[^1];
-            this.logger.Debug($"Class: {className} | Method: {memberName} | Message: {(string.IsNullOrWhiteSpace(msg) ? "Null" : msg)}");
+            this.logger.Debug($"Class: {className} | Method: {memberName} | Message: {(string.IsNullOrWhiteSpace(message) ? "Null" : message)}");
         }
 
         /// <summary>
         /// 记录Error级日志的内部实现
         /// </summary>
-        /// <param name="msg">日志显示的信息</param>
+        /// <param name="message">日志显示的信息</param>
         /// <param name="ex">错误实例</param>
         /// <param name="filePath">调用成员路径</param>
         /// <param name="memberName">调用成员名</param>
-        protected virtual void InnerError(string? msg, Exception? ex, string filePath, string memberName)
+        protected virtual void InnerError(string? message, Exception? ex, string filePath, string memberName)
         {
             string className = filePath.Split('\\')[^1];
-            if (ex == null)
+            if (ex is null)
             {
-                this.logger.Error($"Class: {className} | Method: {memberName} | Message: {(string.IsNullOrWhiteSpace(msg) ? "Null" : msg)}");
+                this.logger.Error($"Class: {className} | Method: {memberName} | Message: {(string.IsNullOrWhiteSpace(message) ? "Null" : message)}");
             }
             else
             {
-                this.logger.Error($"Class: {className} | Method: {memberName} | Message: {(string.IsNullOrWhiteSpace(msg) ? "Null" : msg)} | {ex.JoinWithInner()}");
+                this.logger.Error($"Class: {className} | Method: {memberName} | Message: {(string.IsNullOrWhiteSpace(message) ? "Null" : message)} | {ex.JoinWithInner()}");
             }
         }
 
         /// <summary>
         /// 记录Fatal级日志的内部实现
         /// </summary>
-        /// <param name="msg">日志显示的信息</param>
+        /// <param name="message">日志显示的信息</param>
         /// <param name="ex">错误实例</param>
         /// <param name="filePath">调用成员路径</param>
         /// <param name="memberName">调用成员名</param>
-        protected virtual void InnerFatal(string? msg, Exception? ex, string filePath, string memberName)
+        protected virtual void InnerFatal(string? message, Exception? ex, string filePath, string memberName)
         {
             string className = filePath.Split('\\')[^1];
-            if (ex == null)
+            if (ex is null)
             {
-                this.logger.Fatal($"Class: {className} | Method: {memberName} | Message: {(string.IsNullOrWhiteSpace(msg) ? "Null" : msg)}");
+                this.logger.Fatal($"Class: {className} | Method: {memberName} | Message: {(string.IsNullOrWhiteSpace(message) ? "Null" : message)}");
             }
             else
             {
-                this.logger.Fatal($"Class: {className} | Method: {memberName} | Message: {(string.IsNullOrWhiteSpace(msg) ? "Null" : msg)} | {ex.JoinWithInner()}");
+                this.logger.Fatal($"Class: {className} | Method: {memberName} | Message: {(string.IsNullOrWhiteSpace(message) ? "Null" : message)} | {ex.JoinWithInner()}");
             }
         }
 
         /// <summary>
         /// 记录Info级日志的内部实现
         /// </summary>
-        /// <param name="msg">日志显示的信息</param>
+        /// <param name="message">日志显示的信息</param>
         /// <param name="filePath">调用成员路径</param>
         /// <param name="memberName">调用成员名</param>
-        protected virtual void InnerInfo(string? msg, string filePath, string memberName)
+        protected virtual void InnerInfo(string? message, string filePath, string memberName)
         {
             string className = filePath.Split('\\')[^1];
-            this.logger.Info($"Class: {className} | Method: {memberName} | Message: {(string.IsNullOrWhiteSpace(msg) ? "Null" : msg)}");
+            this.logger.Info($"Class: {className} | Method: {memberName} | Message: {(string.IsNullOrWhiteSpace(message) ? "Null" : message)}");
         }
 
         /// <summary>
         /// 记录Trace级日志的内部实现
         /// </summary>
-        /// <param name="msg">日志显示的信息</param>
+        /// <param name="message">日志显示的信息</param>
         /// <param name="filePath">调用成员路径</param>
         /// <param name="memberName">调用成员名</param>
-        protected virtual void InnerTrace(string? msg, string filePath, string memberName)
+        protected virtual void InnerTrace(string? message, string filePath, string memberName)
         {
             string className = filePath.Split('\\')[^1];
-            this.logger.Trace($"Class: {className} | Method: {memberName} | Message: {(string.IsNullOrWhiteSpace(msg) ? "Null" : msg)}");
+            this.logger.Trace($"Class: {className} | Method: {memberName} | Message: {(string.IsNullOrWhiteSpace(message) ? "Null" : message)}");
         }
 
         /// <summary>
         /// 记录Warn级日志的内部实现
         /// </summary>
-        /// <param name="msg">日志显示的信息</param>
+        /// <param name="message">日志显示的信息</param>
         /// <param name="ex">错误实例</param>
         /// <param name="filePath">调用成员路径</param>
         /// <param name="memberName">调用成员名</param>
-        protected virtual void InnerWarn(string? msg, Exception? ex, string filePath, string memberName)
+        protected virtual void InnerWarn(string? message, Exception? ex, string filePath, string memberName)
         {
             string className = filePath.Split('\\')[^1];
-            if (ex == null)
+            if (ex is null)
             {
-                this.logger.Warn($"Class: {className} | Method: {memberName} | Message: {(string.IsNullOrWhiteSpace(msg) ? "Null" : msg)}");
+                this.logger.Warn($"Class: {className} | Method: {memberName} | Message: {(string.IsNullOrWhiteSpace(message) ? "Null" : message)}");
             }
             else
             {
-                this.logger.Warn($"Class: {className} | Method: {memberName} | Message: {(string.IsNullOrWhiteSpace(msg) ? "Null" : msg)} | {ex.JoinWithInner()}");
+                this.logger.Warn($"Class: {className} | Method: {memberName} | Message: {(string.IsNullOrWhiteSpace(message) ? "Null" : message)} | {ex.JoinWithInner()}");
             }
         }
 
         #region ILogger接口
 
         /// <inheritdoc/>
-        public void Debug(string? msg, [CallerFilePath] string filePath = "", [CallerMemberName] string memberName = "")
+        public void Debug(string? message, [CallerFilePath] string filePath = "", [CallerMemberName] string memberName = "")
         {
-            InnerDebug(msg, filePath, memberName);
+            InnerDebug(message, filePath, memberName);
         }
 
         /// <inheritdoc/>
-        public void Error(string? msg, Exception? ex, [CallerFilePath] string filePath = "", [CallerMemberName] string memberName = "")
+        public void Error(string? message, Exception? ex, [CallerFilePath] string filePath = "", [CallerMemberName] string memberName = "")
         {
-            InnerError(msg, ex, filePath, memberName);
+            InnerError(message, ex, filePath, memberName);
         }
 
         /// <inheritdoc/>
@@ -131,15 +131,15 @@ namespace TamamoToolkit.Logger
         }
 
         /// <inheritdoc/>
-        public void Error(string? msg, [CallerFilePath] string filePath = "", [CallerMemberName] string memberName = "")
+        public void Error(string? message, [CallerFilePath] string filePath = "", [CallerMemberName] string memberName = "")
         {
-            InnerError(msg, null, filePath, memberName);
+            InnerError(message, null, filePath, memberName);
         }
 
         /// <inheritdoc/>
-        public void Fatal(string? msg, Exception? ex, [CallerFilePath] string filePath = "", [CallerMemberName] string memberName = "")
+        public void Fatal(string? message, Exception? ex, [CallerFilePath] string filePath = "", [CallerMemberName] string memberName = "")
         {
-            InnerFatal(msg, ex, filePath, memberName);
+            InnerFatal(message, ex, filePath, memberName);
         }
 
         /// <inheritdoc/>
@@ -149,33 +149,33 @@ namespace TamamoToolkit.Logger
         }
 
         /// <inheritdoc/>
-        public void Fatal(string? msg, [CallerFilePath] string filePath = "", [CallerMemberName] string memberName = "")
+        public void Fatal(string? message, [CallerFilePath] string filePath = "", [CallerMemberName] string memberName = "")
         {
-            InnerFatal(msg, null, filePath, memberName);
+            InnerFatal(message, null, filePath, memberName);
         }
 
         /// <inheritdoc/>
-        public void Info(string? msg, [CallerFilePath] string filePath = "", [CallerMemberName] string memberName = "")
+        public void Info(string? message, [CallerFilePath] string filePath = "", [CallerMemberName] string memberName = "")
         {
-            InnerInfo(msg, filePath, memberName);
+            InnerInfo(message, filePath, memberName);
         }
 
         /// <inheritdoc/>
-        public void Trace(string? msg, [CallerFilePath] string filePath = "", [CallerMemberName] string memberName = "")
+        public void Trace(string? message, [CallerFilePath] string filePath = "", [CallerMemberName] string memberName = "")
         {
-            InnerTrace(msg, filePath, memberName);
+            InnerTrace(message, filePath, memberName);
         }
 
         /// <inheritdoc/>
-        public void Warn(string? msg, Exception? ex, [CallerFilePath] string filePath = "", [CallerMemberName] string memberName = "")
+        public void Warn(string? message, Exception? ex, [CallerFilePath] string filePath = "", [CallerMemberName] string memberName = "")
         {
-            InnerWarn(msg, ex, filePath, memberName);
+            InnerWarn(message, ex, filePath, memberName);
         }
 
         /// <inheritdoc/>
-        public void Warn(string? msg, [CallerFilePath] string filePath = "", [CallerMemberName] string memberName = "")
+        public void Warn(string? message, [CallerFilePath] string filePath = "", [CallerMemberName] string memberName = "")
         {
-            InnerWarn(msg, null, filePath, memberName);
+            InnerWarn(message, null, filePath, memberName);
         }
 
         /// <inheritdoc/>

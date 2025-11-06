@@ -1,4 +1,9 @@
-﻿## v2.0.1 更新内容
+﻿## v2.1.0 更新内容
+
+- [NLog](https://www.nuget.org/packages/NLog) 包的依赖升级为6.0.5版本
+- 修改了日志输出的 Exception 字符串拼接布局
+
+## v2.0.1 更新内容
 
 - 项目正式更名为 **TamamoToolkit**，所有命名空间均已调整
 	- Chaldea.Components -> TamamoToolkit

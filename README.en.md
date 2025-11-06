@@ -18,13 +18,9 @@ This project is a collection of utilities integrated to facilitate daily develop
 - Wrapper calls for [NLog](https://www.nuget.org/packages/NLog):
 	- `TamamoToolkit.Logger` namespace
 
-## v2.0.1 Update Details
+## v2.1.0 Update Details
 
-- Project officially renamed to **TamamoToolkit**, and all namespaces have been updated accordingly.	
-	- Chaldea.Components -> TamamoToolkit
-	- Chaldea.Components.Events -> TamamoToolkit.Events
-	- Chaldea.Components.Extensions -> TamamoToolkit.Extensions
-	- Chaldea.Components.Models -> TamamoToolkit.Models
-	- Chaldea.Components.Logger -> TamamoToolkit.Logger
+- Upgraded the dependency of the [NLog](https://www.nuget.org/packages/NLog) package to version 6.0.5
+- Modified the Exception string concatenation layout for log output
 
 ## [More Changelog](https://github.com/YukariMikaduki/tamamo-toolkit/blob/main/CHANGELOG.en.md)
