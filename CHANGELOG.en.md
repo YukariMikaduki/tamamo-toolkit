@@ -1,4 +1,10 @@
-﻿## v2.1.0 Update Details
+﻿## v2.2.0 Update Details
+
+- Added and refactored array extension methods:
+    - Optimized performance for the `Clear` and `Fill` methods
+    - Added support for the `Func<T>` delegate to the `Fill` method
+
+## v2.1.0 Update Details
 
 - Upgraded the dependency of the [NLog](https://www.nuget.org/packages/NLog) package to version 6.0.5
 - Modified the Exception string concatenation layout for log output

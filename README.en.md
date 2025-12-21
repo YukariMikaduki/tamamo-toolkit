@@ -18,9 +18,10 @@ This project is a collection of utilities integrated to facilitate daily develop
 - Wrapper calls for [NLog](https://www.nuget.org/packages/NLog):
 	- `TamamoToolkit.Logger` namespace
 
-## v2.1.0 Update Details
+## v2.2.0 Update Details
 
-- Upgraded the dependency of the [NLog](https://www.nuget.org/packages/NLog) package to version 6.0.5
-- Modified the Exception string concatenation layout for log output
+- Added and refactored array extension methods:
+    - Optimized performance for the `Clear` and `Fill` methods
+    - Added support for the `Func<T>` delegate to the `Fill` method
 
 ## [More Changelog](https://github.com/YukariMikaduki/tamamo-toolkit/blob/main/CHANGELOG.en.md)

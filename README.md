@@ -18,9 +18,10 @@
 - [NLog](https://www.nuget.org/packages/NLog) 的包装调用：
 	- `TamamoToolkit.Logger` 命名空间	
 
-## v2.1.0 更新内容
+## v2.2.0 更新内容
 
-- [NLog](https://www.nuget.org/packages/NLog) 包的依赖升级为6.0.5版本
-- 修改了日志输出的 Exception 字符串拼接布局
+- 数组扩展方法新增及重构：
+	- 优化了 `Clear` 和 `Fill` 方法的性能表现
+	- `Fill` 方法新增对 `Func<T>` 委托的支持
 
 ## [更多更新历史](https://github.com/YukariMikaduki/tamamo-toolkit/blob/main/CHANGELOG.md)
