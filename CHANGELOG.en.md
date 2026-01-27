@@ -1,4 +1,4 @@
-﻿## v2.2.0 Update Details
+## v2.2.0 Update Details
 
 - Added and refactored array extension methods:
     - Optimized performance for the `Clear` and `Fill` methods

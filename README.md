@@ -4,24 +4,24 @@
 [![NuGet Package](https://img.shields.io/nuget/v/TamamoToolkit.svg?logo=nuget)](https://www.nuget.org/packages/TamamoToolkit)
 [![License](https://img.shields.io/github/license/YukariMikaduki/tamamo-toolkit.svg?logo=github)](https://github.com/YukariMikaduki/tamamo-toolkit/blob/main/LICENSE)
 
-- [ÏîÄ¿URL](https://github.com/YukariMikaduki/tamamo-toolkit)
-- [Nuget°ü](https://www.nuget.org/packages/TamamoToolkit)
+- [é¡¹ç›®URL](https://github.com/YukariMikaduki/tamamo-toolkit)
+- [NugetåŒ…](https://www.nuget.org/packages/TamamoToolkit)
 
-## ×ÔÊö  
+## è‡ªè¿°  
 
-´ËÏîÄ¿ÊÇÎªÁË·½±ãÈÕ³£¿ª·¢¹¤×÷¶øÕûºÏµÄ¹¤¾ß¼¯£¬°üÀ¨µ«²»ÏŞÓÚ£º
-- ¼òµ¥µÄÊÂ¼ş¾ÛºÏÆ÷
-	- `TamamoToolkit.Events` ÃüÃû¿Õ¼ä
-- ¸÷Àà¼ò»¯´úÂëµÄÀ©Õ¹·½·¨ºÍÊı¾İÄ£ĞÍ
-	- `TamamoToolkit.Extensions` ÃüÃû¿Õ¼ä
-	- `TamamoToolkit.Models` ÃüÃû¿Õ¼ä
-- [NLog](https://www.nuget.org/packages/NLog) µÄ°ü×°µ÷ÓÃ£º
-	- `TamamoToolkit.Logger` ÃüÃû¿Õ¼ä	
+æ­¤é¡¹ç›®æ˜¯ä¸ºäº†æ–¹ä¾¿æ—¥å¸¸å¼€å‘å·¥ä½œè€Œæ•´åˆçš„å·¥å…·é›†ï¼ŒåŒ…æ‹¬ä½†ä¸é™äºï¼š
+- ç®€å•çš„äº‹ä»¶èšåˆå™¨
+	- `TamamoToolkit.Events` å‘½åç©ºé—´
+- å„ç±»ç®€åŒ–ä»£ç çš„æ‰©å±•æ–¹æ³•å’Œæ•°æ®æ¨¡å‹
+	- `TamamoToolkit.Extensions` å‘½åç©ºé—´
+	- `TamamoToolkit.Models` å‘½åç©ºé—´
+- [NLog](https://www.nuget.org/packages/NLog) çš„åŒ…è£…è°ƒç”¨ï¼š
+	- `TamamoToolkit.Logger` å‘½åç©ºé—´	
 
-## v2.2.0 ¸üĞÂÄÚÈİ
+## v2.2.0 æ›´æ–°å†…å®¹
 
-- Êı×éÀ©Õ¹·½·¨ĞÂÔö¼°ÖØ¹¹£º
-	- ÓÅ»¯ÁË `Clear` ºÍ `Fill` ·½·¨µÄĞÔÄÜ±íÏÖ
-	- `Fill` ·½·¨ĞÂÔö¶Ô `Func<T>` Î¯ÍĞµÄÖ§³Ö
+- æ•°ç»„æ‰©å±•æ–¹æ³•æ–°å¢åŠé‡æ„ï¼š
+	- ä¼˜åŒ–äº† `Clear` å’Œ `Fill` æ–¹æ³•çš„æ€§èƒ½è¡¨ç°
+	- `Fill` æ–¹æ³•æ–°å¢å¯¹ `Func<T>` å§”æ‰˜çš„æ”¯æŒ
 
-## [¸ü¶à¸üĞÂÀúÊ·](https://github.com/YukariMikaduki/tamamo-toolkit/blob/main/CHANGELOG.md)
+## [æ›´å¤šæ›´æ–°å†å²](https://github.com/YukariMikaduki/tamamo-toolkit/blob/main/CHANGELOG.md)
