@@ -32,14 +32,14 @@
             {
                 ArgumentNullException.ThrowIfNull(array);
 #if NET6_0
-            if (startIndex < 0)
-            {
-                throw new ArgumentOutOfRangeException(nameof(startIndex));
-            }
-            if (count < 0)
-            {
-                throw new ArgumentOutOfRangeException(nameof(count));
-            }
+                if (startIndex < 0)
+                {
+                    throw new ArgumentOutOfRangeException(nameof(startIndex));
+                }
+                if (count < 0)
+                {
+                    throw new ArgumentOutOfRangeException(nameof(count));
+                }
 #elif NET8_0_OR_GREATER
                 ArgumentOutOfRangeException.ThrowIfNegative(startIndex);
                 ArgumentOutOfRangeException.ThrowIfNegative(count);
@@ -67,14 +67,14 @@
             {
                 ArgumentNullException.ThrowIfNull(array);
 #if NET6_0
-            if (startIndex < 0)
-            {
-                throw new ArgumentOutOfRangeException(nameof(startIndex));
-            }
-            if (count < 0)
-            {
-                throw new ArgumentOutOfRangeException(nameof(count));
-            }
+                if (startIndex < 0)
+                {
+                    throw new ArgumentOutOfRangeException(nameof(startIndex));
+                }
+                if (count < 0)
+                {
+                    throw new ArgumentOutOfRangeException(nameof(count));
+                }
 #elif NET8_0_OR_GREATER
                 ArgumentOutOfRangeException.ThrowIfNegative(startIndex);
                 ArgumentOutOfRangeException.ThrowIfNegative(count);
@@ -116,14 +116,14 @@
                 ArgumentNullException.ThrowIfNull(array);
                 ArgumentNullException.ThrowIfNull(filler);
 #if NET6_0
-            if (startIndex < 0)
-            {
-                throw new ArgumentOutOfRangeException(nameof(startIndex));
-            }
-            if (count < 0)
-            {
-                throw new ArgumentOutOfRangeException(nameof(count));
-            }
+                if (startIndex < 0)
+                {
+                    throw new ArgumentOutOfRangeException(nameof(startIndex));
+                }
+                if (count < 0)
+                {
+                    throw new ArgumentOutOfRangeException(nameof(count));
+                }
 #elif NET8_0_OR_GREATER
                 ArgumentOutOfRangeException.ThrowIfNegative(startIndex);
                 ArgumentOutOfRangeException.ThrowIfNegative(count);

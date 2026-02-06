@@ -11,7 +11,6 @@
             /// 检查 <paramref name="value"/> 是否为 <typeparamref name="TEnum"/> 中所定义的枚举项
             /// </summary>
             /// <typeparam name="TEnum">枚举类型</typeparam>
-            /// <param name="value">要检查的值</param>
             /// <param name="enumValue">
             /// 如果 <paramref name="value"/> 已在 <typeparamref name="TEnum"/> 中定义，则 <paramref
             /// name="enumValue"/> 为转换后的枚举项，否则为 0
