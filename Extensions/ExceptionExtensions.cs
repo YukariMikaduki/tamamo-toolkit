@@ -5,7 +5,6 @@
     /// </summary>
     public static class ExceptionExtensions
     {
-        /// <param name="ex"><see cref="Exception"/> 实例</param
         extension(Exception? ex)
         {
             /// <summary>

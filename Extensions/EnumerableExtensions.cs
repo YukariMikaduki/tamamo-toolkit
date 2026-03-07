@@ -6,7 +6,6 @@
     public static class EnumerableExtensions
     {
         /// <typeparam name="T"><see cref="IEnumerable{T}"/> 中的数据类型</typeparam>
-        /// <param name="obj"><see cref="IEnumerable{T}"/> 的实例</param>
         extension<T>(IEnumerable<T> obj)
         {
             /// <summary>
@@ -28,10 +27,21 @@
                     }
                 }
             }
+
+            /// <summary>
+            /// 对 <see cref="IEnumerable{T}"/> 中的每个元素执行异步等待操作
+            /// </summary>
+            /// <param name="func">所需执行的异步等待操作</param>
+            public async Task ForEach(Func<T, Task> func)
+            {
+                foreach (var item in obj)
+                {
+                    await func.Invoke(item);
+                }
+            }
         }
 
         /// <typeparam name="T"><see cref="IEnumerable{T}"/> 中的数据类型</typeparam>
-        /// <param name="obj"><see cref="IEnumerable{T}"/> 的实例</param>
         extension<T>(IEnumerable<T>? obj)
         {
             /// <summary>

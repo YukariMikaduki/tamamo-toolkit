@@ -1,3 +1,9 @@
+## v2.3.0 Update Details
+
+- Added IEnumerable extension methods:
+    - Asynchronously wait for each element
+- Fixed typos in some comments
+
 ## v2.2.0 Update Details
 
 - Added and refactored array extension methods:
