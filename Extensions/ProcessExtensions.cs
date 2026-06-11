@@ -24,16 +24,16 @@ namespace TamamoToolkit.Extensions
                     return ret;
                 }
                 if (Task.WaitAny([Task.Run(() =>
-            {
-                while (true)
                 {
-                    if (process.MainWindowHandle != IntPtr.Zero)
+                    while (true)
                     {
-                        break;
+                        if (process.MainWindowHandle != IntPtr.Zero)
+                        {
+                            break;
+                        }
+                        Thread.Sleep(10);
                     }
-                    Thread.Sleep(10);
-                }
-            })], timeout) != -1)
+                })], timeout) != -1)
                 {
                     ret = true;
                     mainwindowHandle = process.MainWindowHandle;
