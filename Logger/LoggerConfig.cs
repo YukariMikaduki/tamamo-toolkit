@@ -1,6 +1,4 @@
-﻿using NLog;
-using NLog.Common;
-using NLog.Config;
+﻿using NLog.Config;
 using NLog.Targets;
 using NLogLevel = NLog.LogLevel;
 
@@ -48,18 +46,10 @@ namespace TamamoToolkit.Logger
         /// </summary>
         public LogLevel MinLevel { get; } = minLevel;
 
-        internal LoggerConfig() : this(LogLevel.Info)
+        internal LoggingConfiguration CreateNLogConfiguration(string configName)
         {
-            UpdateConfig();
-        }
-
-        internal void UpdateConfig()
-        {
-            LogManager.ThrowExceptions = false;
-            InternalLogger.LogLevel = NLogLevel.Off;
-            InternalLogger.LogFile = @"C:\temp\nlog-internal.log";
             var config = new LoggingConfiguration();
-            var logfile = new FileTarget("logfile")
+            var logfile = new FileTarget(configName)
             {
                 Layout = this.Layout,
                 FileName = this.FileName,
@@ -70,7 +60,7 @@ namespace TamamoToolkit.Logger
                 OpenFileCacheTimeout = 30,
             };
             config.AddRule(this.MinLevel.ToNLogLevel(), NLogLevel.Fatal, logfile);
-            LogManager.Configuration = config;
+            return config;
         }
     }
 }

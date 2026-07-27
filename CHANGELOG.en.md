@@ -1,3 +1,13 @@
+## v2.4.0 Update Details
+
+- Refactored the `TamamoToolkit.Logger` logging module:
+	- Converted `LoggerFactory` into a thread-safe singleton, accessed through `LoggerFactory.Instance`
+	- Each `Logger` now uses its own NLog `LogFactory` and `LoggerConfig`, avoiding global NLog configuration changes and configuration interference between loggers
+	- Added `ILogger.Name`, `ILogger.Config`, and `ILogger.UpdateConfig` to support runtime configuration updates for a specific logger
+	- Added `LoggerFactory.UpdateLoggerConfig` to update a logger's configuration by name
+	- Retained same-name logger caching and added argument validation and synchronization
+- Upgraded the dependency of the [NLog](https://www.nuget.org/packages/NLog) package to version 6.1.4
+
 ## v2.3.0 Update Details
 
 - Added IEnumerable extension methods:

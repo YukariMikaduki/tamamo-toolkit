@@ -18,10 +18,14 @@
 - [NLog](https://www.nuget.org/packages/NLog) 的包装调用：
 	- `TamamoToolkit.Logger` 命名空间	
 
-## v2.3.0 更新内容
+## v2.4.0 更新内容
 
-- IEnumerable扩展方法新增：
-	- 对每个元素执行异步等待操作
-- 部分注释错别字修改
+- 重构 `TamamoToolkit.Logger` 日志模块：
+	- `LoggerFactory` 调整为线程安全单例，通过 `LoggerFactory.Instance` 获取唯一实例
+	- 每个 `Logger` 使用独立的 NLog `LogFactory` 与 `LoggerConfig`，不再修改全局 NLog 配置，多个记录器的配置互不影响
+	- 新增 `ILogger.Name`、`ILogger.Config` 和 `ILogger.UpdateConfig`，支持运行时更新指定日志记录器的配置
+	- 新增 `LoggerFactory.UpdateLoggerConfig`，可按记录器名称动态更新其日志配置
+	- 保留同名日志记录器的实例缓存，并补充参数校验与线程同步
+- [NLog](https://www.nuget.org/packages/NLog) 包的依赖升级为6.1.4版本
 
 ## [更多更新历史](https://github.com/YukariMikaduki/tamamo-toolkit/blob/main/CHANGELOG.md)

@@ -1,4 +1,5 @@
-﻿using System.Runtime.CompilerServices;
+﻿using NLog;
+using System.Runtime.CompilerServices;
 using TamamoToolkit.Extensions;
 
 namespace TamamoToolkit.Logger
@@ -6,16 +7,41 @@ namespace TamamoToolkit.Logger
     /// <summary>
     /// <see cref="ILogger"/> 接口的一个实现，可以继承此类以扩展功能
     /// </summary>
-    /// <param name="loggerName">日志记录器名称</param>
-    public class Logger(string loggerName) : ILogger
+    public class Logger : ILogger
     {
+        /// <summary>
+        /// <see cref="logger"/> 对应的日志记录器工厂
+        /// </summary>
+        protected readonly LogFactory logFactory;
+
         /// <summary>
         /// 使用 NLog 实现的日志记录器
         /// </summary>
-        protected readonly NLog.Logger logger = NLog.LogManager.GetLogger(loggerName);
+        protected readonly NLog.Logger logger;
+
+        /// <inheritdoc/>
+        public LoggerConfig Config { get; private set; }
+
+        /// <inheritdoc/>
+        public string Name => this.logger.Name;
 
         /// <summary>
-        /// 记录Debug级日志的内部实现
+        /// 初始化一个 <see cref="Logger"/> 的新实例
+        /// </summary>
+        /// <param name="loggerName">日志记录器名称</param>
+        /// <param name="config">日志配置</param>
+        public Logger(string loggerName, LoggerConfig config)
+        {
+            this.Config = config;
+            this.logFactory = new LogFactory()
+            {
+                Configuration = config.CreateNLogConfiguration(loggerName),
+            };
+            this.logger = this.logFactory.GetLogger(loggerName);
+        }
+
+        /// <summary>
+        /// 记录 Debug 级日志的内部实现
         /// </summary>
         /// <param name="message">日志显示的信息</param>
         /// <param name="filePath">调用成员路径</param>
@@ -27,7 +53,7 @@ namespace TamamoToolkit.Logger
         }
 
         /// <summary>
-        /// 记录Error级日志的内部实现
+        /// 记录 Error 级日志的内部实现
         /// </summary>
         /// <param name="message">日志显示的信息</param>
         /// <param name="ex">错误实例</param>
@@ -47,7 +73,7 @@ namespace TamamoToolkit.Logger
         }
 
         /// <summary>
-        /// 记录Fatal级日志的内部实现
+        /// 记录 Fatal 级日志的内部实现
         /// </summary>
         /// <param name="message">日志显示的信息</param>
         /// <param name="ex">错误实例</param>
@@ -67,7 +93,7 @@ namespace TamamoToolkit.Logger
         }
 
         /// <summary>
-        /// 记录Info级日志的内部实现
+        /// 记录 Info 级日志的内部实现
         /// </summary>
         /// <param name="message">日志显示的信息</param>
         /// <param name="filePath">调用成员路径</param>
@@ -79,7 +105,7 @@ namespace TamamoToolkit.Logger
         }
 
         /// <summary>
-        /// 记录Trace级日志的内部实现
+        /// 记录 Trace 级日志的内部实现
         /// </summary>
         /// <param name="message">日志显示的信息</param>
         /// <param name="filePath">调用成员路径</param>
@@ -91,7 +117,7 @@ namespace TamamoToolkit.Logger
         }
 
         /// <summary>
-        /// 记录Warn级日志的内部实现
+        /// 记录 Warn 级日志的内部实现
         /// </summary>
         /// <param name="message">日志显示的信息</param>
         /// <param name="ex">错误实例</param>
@@ -164,6 +190,13 @@ namespace TamamoToolkit.Logger
         public void Trace(string? message, [CallerFilePath] string filePath = "", [CallerMemberName] string memberName = "")
         {
             InnerTrace(message, filePath, memberName);
+        }
+
+        /// <inheritdoc/>
+        public void UpdateConfig(LoggerConfig newConfig)
+        {
+            this.Config = newConfig;
+            this.logFactory.Configuration = newConfig.CreateNLogConfiguration(this.Name);
         }
 
         /// <inheritdoc/>

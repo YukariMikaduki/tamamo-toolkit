@@ -9,7 +9,7 @@
         private readonly Dictionary<Type, EventBase> events = [];
 
         /// <summary>
-        /// 获取 <see cref="EventCenter"/> 类型实例
+        /// 获取 <see cref="EventCenter"/> 的唯一实例
         /// </summary>
         public static EventCenter Instance => lazy.Value;
 
