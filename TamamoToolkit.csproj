@@ -15,10 +15,7 @@
   <PropertyGroup>
     <Title>$(AssemblyName)</Title>
     <Authors>Yukari Mikaduki</Authors>
-    <Copyright>Copyright (c) 2025 Yukari Mikaduki. All rights reserved.</Copyright>
-    <AssemblyVersion>2.4.0.9704</AssemblyVersion>
-    <FileVersion>2.4.0.9704</FileVersion>
-    <AssemblyInfoVersion>$(AssemblyVersion)</AssemblyInfoVersion>
+    <Copyright>Copyright (c) 2025-2027 Yukari Mikaduki. All rights reserved.</Copyright>
     <Version>2.4.0</Version>
     <Description>A collection of utilities integrated to facilitate daily development work.</Description>
     <PackageReadmeFile>README.en.md</PackageReadmeFile>
@@ -28,18 +25,15 @@
     <RepositoryUrl>https://github.com/YukariMikaduki/tamamo-toolkit</RepositoryUrl>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <ShouldCreateLogs>False</ShouldCreateLogs>
-    <AdvancedSettingsExpanded>False</AdvancedSettingsExpanded>
-    <UpdateAssemblyVersion>True</UpdateAssemblyVersion>
-    <UpdateAssemblyFileVersion>True</UpdateAssemblyFileVersion>
-    <UpdateAssemblyInfoVersion>False</UpdateAssemblyInfoVersion>
-    <AssemblyVersionSettings>IncrementOnDemandWithResetOnIncrease.IncrementOnDemandWithResetOnIncrease.IncrementOnDemandWithResetOnIncrease.DeltaDayStamp</AssemblyVersionSettings>
-    <AssemblyFileVersionSettings>IncrementOnDemandWithResetOnIncrease.IncrementOnDemandWithResetOnIncrease.IncrementOnDemandWithResetOnIncrease.DeltaDayStamp</AssemblyFileVersionSettings>
-    <UpdatePackageVersion>False</UpdatePackageVersion>
-    <AssemblyInfoVersionType>SettingsVersion</AssemblyInfoVersionType>
-    <InheritWinAppVersionFrom>None</InheritWinAppVersionFrom>
-  </PropertyGroup>
+  <!--自动生成版本号-->
+  <Target Name="SetBuildVersion" BeforeTargets="GetAssemblyVersion">
+    <PropertyGroup>
+      <_BuildVersionDays>$([System.DateTime]::Now.Date.Subtract($([System.DateTime]::new(2000, 1, 1))).Days)</_BuildVersionDays>
+      <AssemblyVersion>$(Version).$(_BuildVersionDays)</AssemblyVersion>
+      <FileVersion>$(AssemblyVersion)</FileVersion>
+      <InformationalVersion>$(AssemblyVersion)</InformationalVersion>
+    </PropertyGroup>
+  </Target>
 
   <ItemGroup>
     <PackageReference Include="NLog" Version="6.1.4" />
