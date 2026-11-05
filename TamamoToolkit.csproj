@@ -27,7 +27,7 @@
     <PackageProjectUrl>https://github.com/YukariMikaduki/tamamo-toolkit</PackageProjectUrl>
     <RepositoryUrl>https://github.com/YukariMikaduki/tamamo-toolkit</RepositoryUrl>
   </PropertyGroup>
-  
+
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <ShouldCreateLogs>False</ShouldCreateLogs>
     <AdvancedSettingsExpanded>False</AdvancedSettingsExpanded>
@@ -54,7 +54,7 @@
     <None Include="README.md">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <Pack>True</Pack>
-      <PackagePath>\</PackagePath>      
+      <PackagePath>\</PackagePath>
     </None>
     <None Include="LICENSE">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

@@ -6,9 +6,7 @@ namespace TamamoToolkit.Logger
 {
     /// <summary>
     /// 日志记录器工厂，此类不能被继承
-    /// <para>
-    /// 每个同名的 <see cref="ILogger"/> 实例对应独立的 <see cref="LoggerConfig"/>， 因此不同配置的记录器互不影响
-    /// </para>
+    /// <para>每个同名的 <see cref="ILogger"/> 实例对应独立的 <see cref="LoggerConfig"/>， 因此不同配置的记录器互不影响</para>
     /// </summary>
     public sealed class LoggerFactory
     {
